@@ -14,7 +14,7 @@ class TestSuite(unittest.TestCase):
         output = StringIO()
 
         app = FizzBuzz()
-        app.run(100, output)
+        app.run(101, output)
 
         self.failIf(len(output.getvalue().splitlines()) != 100)
 
@@ -23,3 +23,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
